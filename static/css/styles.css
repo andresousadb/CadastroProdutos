@@ -1,0 +1,24 @@
+
+.form-layout{
+
+    border-radius: 15px;
+    width: 300px;
+
+}
+
+fieldset label {
+   display: block;
+   width: 10%;
+   float:left;
+ }
+
+.message-text{
+
+    color: white;
+
+}
+
+
+
+
+

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+    <body>
+
+    <div class="container bg-light shadow-md p-5 form-layout">
+
+        <h3> Cadastro Produtos </h3>
+        <hr>
+
+            <form method="post">
+                {% csrf_token %}
+                <div class="card" style="width: 50rem;">
+                    <div class="card-body">
+                        {% crispy form %}
+                    </div>
+                    <button type="submit" class="btn btn-info">Criar Registro</button>
+                     <a href="{% url 'visualizar' %}" class="btn btn-warning">Visualizar</a>
+                </div>
+
+            </form>
+
+    </div>
+
+    <br>
+
+    </body>
+
+{% endblock %}
+
+
